@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+
+}
+h3{
+  width: 100px;
+  text-align: center;
+  padding-top: 5px;
+  position: flex;
+  z-index: 2em;
+}
+img{
+width:100px;
+height: 100px;
+object-position: right;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  height:100%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.header {
+  text-decoration:none;
+  padding: 20px 80px;
+  background: #555;
+  color:  ;
+}
+   
+}
+
+ 
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+
+  
+}
+a:hover(.active) {
+  background-color:#ddd;
+}
+input {
+  text-align:left;
+  padding: 6px;  
+   border-radius: 3px;
+  font-size:16px;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav{
+   text-align:right;
+   padding:8px 40px;
+   text-overflow: scroll;
+}
+a:hover{
+  background-color:#111;
+   
+}
