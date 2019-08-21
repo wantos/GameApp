@@ -111,8 +111,18 @@ input {
 
 .topnav{
    text-align:right;
-   padding:8px 40px;
+   padding:25px;
+   margin: 0 auto;
    text-overflow: scroll;
+   font-weight: bold;
+   text-decoration: none;
+
+}
+.topnav a{
+  padding: 18px;
+  text-decoration: none;
+
+}
 }
 a:hover{
   background-color:#111;
