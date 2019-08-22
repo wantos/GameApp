@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="gameapp.css">
+	<title>GAME SELECTOR</title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="container">
+	   <div class="header" id="myHeader">
+   	  <div class= "topnav">
+	 	<a class="active" href="#home">Home</a>
+	 	   <a class="active" href="#home">Mixer</a>
+	 	     <a class="active" href="#home">Entertainment</a>
+	 	  <a class="active" href="#home">Store</a>
+	 	<a class="active" href="#home">About</a>
+
+	 	<input type ="text" onkeyup="myFunction()" placeholder="search game..." width="200%" title="game" id="myinput"></input>
+	  </div>
+	 </div>
+ <div class="listing">
+<table class="tab1">
+	<tr>
+		<th>Title</th>
+		<th>Image</th>
+		<th>Platform</th>
+		<th>Score</th>
+		<th>Genre</th>
+		<th>Editors-Choice</th>
+	</tr><br>
+	<tr>
+		<td><b>Bungie</b></td>
+		<td><img src="images\bungie.jpeg"></td>
+		<td>Xbox</td>
+		<td>6.0</td>
+		<td>Sci-Fi</td>
+		<td>True</td>
+	</tr>
+	<tr>
+		<td><b>Crisis</b></td>
+		<td><img src="images\crisis.jpg"></td>
+		<td>Xbox</td>
+		<td>6.5</td>
+		<td></td>
+		<td>True</td>
+
+	</tr>
+	<tr>
+		<td><b>Code of Duty</b></td>
+		<td><img src="images\cod.jpeg"></td>
+		<td>PS4</td>
+		<td>8</td>
+		<td>Platformer</td>
+		<td>True</td>
+	</tr>
+</table>
+ 
+			<div class="pagination">
+				<h5 style="font-size: 20px;"><b>Browse Pages Here</b></h5>
+			  <a href="#">&laquo;</a>
+			  <a href="#">1</a>
+			  <a href="#">2</a>
+			  <a href="#">3</a>
+			  <a href="#">4</a>
+			  <a href="#">5</a>
+			  <a href="#">6</a>
+			  <a class="active" href="#">7</a>
+			  <a href="#">8</a>
+			  <a href="#">9</a>
+			  <a href="#">&raquo;</a>
+          </div>
+	    </div>
+	   <script>
+	   	function myFunction(){
+	   		var input, filter, td, tr;
+	   		input = document.getElementById("myinput");
+	   		filter = input.value.toUpperCase();
+	   		td = document.getElementByclass("tab1");
+	   		for (i = 0; < td.length; i++){
+	   			tr = td[i].getElementsByTagName("tr")[0];
+	   			if(td.innerHTML.toUpperCase().indexOf(filter)>-1{
+	   				td[i].style.displays="";
+	   			}else{
+	   				td[i.style.display="none";]
+	   			}
+	   		}
+	   	}
+	   </script>
+    </body>
+</html>  
